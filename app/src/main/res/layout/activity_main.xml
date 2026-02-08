@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#f5f5f5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auto Call App"
+        android:textSize="32sp"
+        android:textColor="#1976D2"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter phone number to call"
+        android:textSize="16sp"
+        android:textColor="#666"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/phoneNumberInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:background="@drawable/input_background"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/callButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Make Call"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:background="@drawable/button_background"
+        android:elevation="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The app will automatically:\n1. Call the number\n2. Play a recording\n3. Hang up when done"
+        android:textSize="14sp"
+        android:textColor="#999"
+        android:layout_marginTop="32dp"
+        android:gravity="center" />
+
+</LinearLayout>
